@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="section-title">
+							<h2>Best Price Just For you!</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+<div class="single-product" style="display: block;margin-left: auto;margin-right: auto; width: 50%;">
+	<div class="product-img">
+		<a href="product-details.html">
+			<img class="default-img" style="height: 600px;width: 50%" src="static/images/{{ photo }}" alt="#">
+			<img class="hover-img" style="height: 600px;width: 50%" src="static/images/{{ photo }}" alt="#">
+		</a>
+		
+	</div>
+
+	<div class="product-content">
+		<h3>NAME :{{ name }}</h3>
+		<div class="product-price">
+			<span>YOUR COST : {{ cost_price }}</span><br>
+			<span>OUR RANGE :{{ selling_pricelow }},{{ selling_pricehigh }}</span><br>
+			<span>AVG COST :{{ avg_price }}</span><br>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

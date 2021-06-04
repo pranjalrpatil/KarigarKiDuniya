@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block body %}
+<h1>Login Page</h1>
+<div class="checkout-form">
+    <!-- Form -->
+    <form class="form" method="POST" action="/loginwithotp">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-12">
+                <div class="form-group">
+                    <label>phone number<span>*</span></label>
+                    <input type="number" name="phonenumber" placeholder="" required="required">
+                </div>
+            </div>
+            <div class="single-widget get-button">
+                <div class="content" >
+                    <div class="button" style="padding:20px" >
+                        <button class="btn btn--radius-2 btn--blue" type="submit">GET OTP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!--/ End Form -->
+</div>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block body %}
+<h1>Login Page bruh</h1>
+<div class="checkout-form">
+    <!-- Form -->
+    <form class="form" method="POST" action="/validateotp">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-12">
+                <div class="form-group">
+                    <label>Enter OTP<span>*</span></label>
+                    <input type="number" name="otp" placeholder="" required="required">
+                </div>
+            </div>
+            <div class="single-widget get-button">
+                <div class="content" >
+                    <div class="button" style="padding:20px" >
+                        <button class="btn btn--radius-2 btn--blue" type="submit">LOGIN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!--/ End Form -->
+</div>
+
+{% endblock %}

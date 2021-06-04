@@ -1,0 +1,117 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+		<div class="shopping-cart section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-12">
+						<!-- Shopping Summery -->
+						<table class="table shopping-summery">
+							<thead>
+								<tr class="main-hading">
+									
+									
+									
+									<th class="text-center">REGISTER</th>
+									
+									
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+								</tr>
+							</tbody>
+						</table>
+						<!--/ End Shopping Summery -->
+					</div>
+				</div>
+				
+		<!-- Start Checkout -->
+		<section class="shop checkout section">
+			<div class="container">
+				<div class="row"> 
+					<div class="col-lg-8 col-12">
+						<div class="checkout-form">
+							
+							
+							<!-- Form -->
+							<form class="form" method="POST" action="{{ url_for('register') }}">
+								<div class="row">
+									<div class="col-lg-12 col-md-12 col-12">
+											<label for="cars">Who am I ?</label>
+											  <select name="typo" id="cars" required>
+											    <option value="seller">Seller</option>
+											    <option value="customer">Customer</option>
+											    
+											  </select>
+											</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<div class="form-group">
+											<label>Username<span>*</span></label>
+											<input type="text" name="username" placeholder="" required="required" >
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<div class="form-group">
+											<label>Password<span>*</span></label>
+											<input type="password" name="password" placeholder="" required="required" >
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<div class="form-group">
+											<label>First Name<span>*</span></label>
+											<input type="text" name="f_name" placeholder="" required="required">
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<div class="form-group">
+											<label>Last Name<span>*</span></label>
+											<input type="text" name="l_name" placeholder="" required="required">
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<div class="form-group">
+											<label>Birthday<span>*</span></label>
+											<input type="date" name="dob" placeholder="" required="required">
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<div class="form-group">
+											<label>City<span>*</span></label>
+											<input type="text" name="city" placeholder="" required="required">
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<div class="form-group">
+											<label>State<span>*</span></label>
+											<input type="text" name="state" placeholder="" required="required">
+										</div>
+									</div>
+
+									
+									<div class="col-lg-6 col-md-6 col-12">
+										<div class="form-group">
+											<label>Phone No.<span>*</span></label>
+											<input type="text" name="phone" placeholder="" required="required">
+										</div>
+									</div>
+									
+									
+							<div class="single-widget get-button">
+								<div class="content">
+									<div class="button">
+										<button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+									</div>
+								</div>
+							</div>
+							<!--/ End Button Widget -->
+						</div>
+						<div class="inner" >
+							<p>Already have an account?  <a  href="{{url_for('login')}}"> Sign In here</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		{% endblock %}
