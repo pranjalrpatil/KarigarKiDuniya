@@ -30,7 +30,7 @@ This project aims at providing the sellers an easy gateway to connect with the c
  ![](implementation_screenshots/kurtidisp.png)
  
  ##### Search by image
- ![](implementation_screenshots/cnn_img2.png)
+ ![](implementation_screenshots/cnn_image2.png)
 
  ##### Market Basket Analysis
  ![](implementation_screenshots/mark_bask2.png)
